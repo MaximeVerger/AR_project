@@ -13,8 +13,8 @@ function draw() {
   rot += rotSpeed;
   // rotateY(rot);
 
-  fill(100, 100, 240);
-  box(5);
+  // fill(100, 100, 240);
+  // box(5);
 
   if (isPressed%2 == 0) {
     translate(Math.random() * max, 0, 0);
