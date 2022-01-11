@@ -5,6 +5,7 @@ html, body {
 }
 h1{
   font-family: fantasy;
+  text-align: center;
 }
 canvas {
   display: block;
