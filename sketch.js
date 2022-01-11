@@ -1,11 +1,13 @@
+
+
+function setup() {
+  createARCanvas();
+}
+
 let mySound;
 function preload() {
   soundFormats('mp3');
   mySound = loadSound('BLOOP');
-}
-
-function setup() {
-  createARCanvas();
 }
 
 let rot = 0;
