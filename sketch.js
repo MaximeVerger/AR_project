@@ -13,7 +13,7 @@ function draw() {
 
   box(5);
 
-  if (mouseIsPressed) {
+  if (touchIsDown) {
     value = 255
   } else {
     value = 150
