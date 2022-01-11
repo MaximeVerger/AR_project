@@ -8,7 +8,7 @@ let value = (100, 240, 100)
 
 function draw() {
   rot += rotSpeed;
-  rotateY(rot);
+  // rotateY(rot);
   fill(value);
 
   box(5);
