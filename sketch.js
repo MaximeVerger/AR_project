@@ -4,7 +4,7 @@ function setup() {
 
 let rot = 0;
 let rotSpeed = 0.1;
-value = (100, 240, 100)
+value = color(100, 240, 100)
 
 function draw() {
   rot += rotSpeed;
@@ -48,10 +48,10 @@ function draw() {
 
 function mouseClicked(){
   console.log("yes tu click")
-  if (value === (100,240,100)){
-    value = (255,255,255)
+  if (value === color(100,240,100)){
+    value = color(255,255,255)
   } 
   else {
-    value = (100,240,100)
+    value = color(100,240,100)
   }
 }
