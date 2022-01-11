@@ -5,15 +5,22 @@ function setup() {
 let rot = 0;
 let rotSpeed = 0.1;
 let location = (0,0,0);
-value = 150;
+let isPressed = 0;
+
+let value = 150;
 
 function draw() {
   rot += rotSpeed;
   // rotateY(rot);
 
-  // translate(location);
   fill(100, 100, 240);
   box(5);
+
+  if (isPressed === 1) {
+    translate(-5, 0, 0);
+    fill(240, 100, 100);
+    box(5);
+  }
 
   // translate(-5, 0, 0);
   // fill(240, 100, 100);
@@ -49,6 +56,5 @@ function draw() {
 }
 
 function touchStarted(){
-  location = (0, -5, -5);
-  redraw();
+  isPressed = 1;
 }
