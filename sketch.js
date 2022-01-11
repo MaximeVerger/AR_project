@@ -47,5 +47,5 @@ function draw() {
 }
 
 function touchStarted(){
-  remove();
+  value = 155
 }
