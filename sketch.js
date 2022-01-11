@@ -1,10 +1,5 @@
 function setup() {
   createARCanvas();
-
-  let inp = createInput('');
-  inp.position(0, 0);
-  inp.size(100);
-  inp.input(myInputEvent);
 }
 
 let rot = 0;
@@ -51,16 +46,12 @@ function draw() {
   // box(5);
 }
 
-// function mouseClicked(){
-//   console.log("yes tu click")
-//   if (value === 150){
-//     value = 255
-//   } 
-//   else {
-//     value = 150
-//   }
-// }
-
-function myInputEvent() {
-  value = 255
+function mouseClicked(){
+  console.log("yes tu click")
+  if (value === 150){
+    value = 255
+  } 
+  else {
+    value = 150
+  }
 }
