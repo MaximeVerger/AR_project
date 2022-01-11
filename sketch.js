@@ -21,6 +21,8 @@ function draw() {
     box(5);
   }
 
+  isPressed = 0;
+
   // translate(-5, 0, 0);
   // fill(240, 100, 100);
   // box(5);
