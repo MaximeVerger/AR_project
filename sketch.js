@@ -9,14 +9,15 @@ let value = 150;
 
 
 function setup() {
-  createARCanvas();
+  let canvas = createARCanvas();
+  canvas.touchStarted(touchsound);
   soundFormats('mp3');
   mySound = loadSound('BLOOP');
 }
 
 function draw() {
   rot += rotSpeed;
-
+  
   if (isPressed%2 == 0) {
     translate(x, y, 0);
     fill(240, 100, 100);
@@ -30,8 +31,10 @@ function draw() {
     mySound.play();
   }
 }
-
-function touchStarted(){
+function touchsound(){
+  mySound.play();
+}
+function touchPressed(){
   isPressed += 1;
   x = Math.random() * max;
   y = Math.random() * max;
