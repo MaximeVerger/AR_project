@@ -6,3 +6,6 @@ html, body {
 canvas {
   display: block;
 }
+.webvr-ui-button {
+  background-color: #A68DAD;
+}
