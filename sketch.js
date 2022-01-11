@@ -12,11 +12,19 @@ function draw() {
 
   box(5);
 
-  translate(-5, 0, 0);
+  translate(-8, 0, 0);
   fill(240, 100, 100);
   box(5);
 
-  translate(10, 0, 0);
+  translate(13, 0, 0);
+  fill(100, 100, 240);
+  box(5);
+
+  translate(0, -8, 0);
+  fill(100, 100, 240);
+  box(5);
+
+  translate(0, -13, 0);
   fill(100, 100, 240);
   box(5);
 }
