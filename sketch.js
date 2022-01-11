@@ -27,4 +27,20 @@ function draw() {
   translate(0, -5, 0);
   fill(100, 100, 240);
   box(5);
+
+  translate(-5, 0, 0);
+  fill(100, 240, 100);
+  box(5);
+
+  translate(0, 5, 0);
+  fill(100, 240, 100);
+  box(5);
+
+  translate(-5, 0, 0);
+  fill(240, 100, 100);
+  box(5);
+
+  translate(0, -5, 0);
+  fill(240, 100, 100);
+  box(5);
 }
