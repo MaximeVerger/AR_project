@@ -10,14 +10,9 @@ let value = 150;
 
 function setup() {
   let canvas = createARCanvas();
-  canvas.touchStarted(touchsound);
-  soundFormats('mp3');
-  mySound = loadSound('BLOOP');
 }
 
-function draw() {
-  rot += rotSpeed;
-  
+function draw() {  
   if (isPressed%2 == 0) {
     translate(x, y, 0);
     fill(240, 100, 100);
