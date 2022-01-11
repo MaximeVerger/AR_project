@@ -10,7 +10,8 @@ let value = 150;
 
 function setup() {
   createARCanvas();
-  new p5.SoundFile("BLOOP.mp3", touchStarted);
+  soundFormats('mp3', 'ogg');
+  mySound = loadSound('BLOOP');
 }
 
 function draw() {
