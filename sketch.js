@@ -11,7 +11,7 @@ function draw() {
   rot += rotSpeed;
   // rotateY(rot);
 
-  translate(location);
+  // translate(location);
   fill(100, 100, 240);
   box(5);
 
@@ -50,5 +50,5 @@ function draw() {
 
 function touchStarted(){
   location = (0, -5, -5);
-  // redraw();
+  redraw();
 }
