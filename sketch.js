@@ -15,7 +15,7 @@ function draw() {
 
   fill(100, 100, 240);
 
-  box(5, 5, 0, x, y);
+  box(5, 5, 5, x, y);
 
   // translate(-5, 0, 0);
   // fill(240, 100, 100);
