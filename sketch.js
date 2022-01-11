@@ -47,5 +47,5 @@ function draw() {
 }
 
 function touchStarted(){
-  clear();
+  remove();
 }
