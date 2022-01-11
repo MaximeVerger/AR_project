@@ -15,11 +15,11 @@ function draw() {
   fill(100, 100, 240);
   box(5);
 
-  // if (isPressed === 1) {
-  //   translate(-5, 0, 0);
-  //   fill(240, 100, 100);
-  //   box(5);
-  // }
+  if (isPressed === 1) {
+    translate(-5, 0, 0);
+    fill(240, 100, 100);
+    box(5);
+  }
 
   // translate(-5, 0, 0);
   // fill(240, 100, 100);
@@ -54,6 +54,6 @@ function draw() {
   // box(5);
 }
 
-// function touchStarted(){
-//   isPressed = 1;
-// }
+function touchStarted(){
+  isPressed = 1;
+}
