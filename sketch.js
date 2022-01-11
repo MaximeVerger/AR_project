@@ -1,3 +1,9 @@
+let mySound;
+function preload() {
+  soundFormats('mp3');
+  mySound = loadSound('BLOOP');
+}
+
 function setup() {
   createARCanvas();
 }
@@ -72,4 +78,5 @@ function touchStarted(){
   isPressed += 1;
   x = Math.random() * max;
   y = Math.random() * max;
+  mySound.play();
 }
