@@ -5,7 +5,7 @@ function setup() {
 let rot = 0;
 let rotSpeed = 0.1;
 let isPressed = 0;
-let max = 5;
+let max = 15;
 let x = 0;
 let y = 0;
 
@@ -64,7 +64,9 @@ function draw() {
 }
 
 function touchStarted(){
-  isPressed += 1;
-  x = Math.random() * max;
-  y = Math.random() * max;
+  if (mouseX <= x + 5 && mouseX >= x - 5 && mouseY <= y + 5 && mouseY <= y - 5){
+    isPressed += 1;
+    x = Math.random() * max;
+    y = Math.random() * max;
+  }
 }
