@@ -6,16 +6,20 @@ let max = 15;
 let x = 0;
 let y = 0;
 let value = 150;
+let loaddone = False
 
 
 function preload() {
   // preload() runs once
   console.log("preload");
+  loaddone = True
 }
 
 function setup() {
   let canvas = createARCanvas();
+  alert("canvas done !")
   preload();
+  if(loaddone == True){ alert("preload done !")  }
 }
 
 function draw() {
