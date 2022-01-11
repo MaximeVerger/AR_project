@@ -10,7 +10,7 @@ function draw() {
   rotateY(rot);
   fill(100, 240, 100);
 
-  box(20);
+  box(5);
 
   
 }
