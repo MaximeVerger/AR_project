@@ -4,18 +4,14 @@ function setup() {
 
 let rot = 0;
 let rotSpeed = 0.1;
-x = 0
-y = 0
+value = 150
 
 function draw() {
   rot += rotSpeed;
   // rotateY(rot);
-  x += 5 
-  y += 5
-
   fill(100, 100, 240);
 
-  box(5, 5, 5, x, y);
+  box(5);
 
   // translate(-5, 0, 0);
   // fill(240, 100, 100);
@@ -51,5 +47,5 @@ function draw() {
 }
 
 function touchStarted(){
-  redraw();
+  background(0);
 }
