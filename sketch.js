@@ -1,9 +1,3 @@
-
-
-function setup() {
-  createARCanvas();
-}
-
 let mySound;
 let rot = 0;
 let rotSpeed = 0.1;
@@ -11,8 +5,16 @@ let isPressed = 0;
 let max = 15;
 let x = 0;
 let y = 0;
-
 let value = 150;
+
+function preload() {
+  soundFormats('mp3');
+  mySound = loadSound('BLOOP');
+}
+
+function setup() {
+  createARCanvas();
+}
 
 function draw() {
   rot += rotSpeed;
