@@ -21,6 +21,7 @@ function draw() {
     box(5);
   }
 
+  
   // translate(-5, 0, 0);
   // fill(240, 100, 100);
   // box(5);
@@ -55,5 +56,5 @@ function draw() {
 }
 
 function touchStarted(){
-  isPressed = 0;
+  isPressed = 1;
 }
