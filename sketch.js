@@ -4,11 +4,12 @@ function setup() {
 
 let rot = 0;
 let rotSpeed = 0.1;
+let value = (100, 240, 100)
 
 function draw() {
   rot += rotSpeed;
   rotateY(rot);
-  fill(100, 240, 100);
+  fill(value);
 
   box(5);
 
@@ -43,4 +44,13 @@ function draw() {
   translate(0, -5, 0);
   fill(240, 100, 100);
   box(5);
+}
+function mouseClicked(){
+  console.log("yes tu click")
+  if (value === (100,240,100)){
+    value = (255,255,255)
+  } 
+  else {
+    value = (100,240,100)
+  }
 }
