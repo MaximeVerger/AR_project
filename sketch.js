@@ -64,9 +64,12 @@ function draw() {
 }
 
 function touchStarted(){
-  if (pmouseX <= x+1000 && pmouseX >= x-1000 && pmouseY <= y+1000 && pmouseY <= y-1000){
-    isPressed += 1;
-    x = Math.random() * max;
-    y = Math.random() * max;
-  }
+  // if (pmouseX <= x+1000 && pmouseX >= x-1000 && pmouseY <= y+1000 && pmouseY <= y-1000){
+  //   isPressed += 1;
+  //   x = Math.random() * max;
+  //   y = Math.random() * max;
+  // }
+  isPressed += 1;
+  x = Math.random() * max;
+  y = Math.random() * max;
 }
