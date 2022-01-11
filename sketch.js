@@ -64,7 +64,7 @@ function draw() {
 }
 
 function touchStarted(){
-  if (mouseX <= x + 5 && mouseX >= x - 5 && mouseY <= y + 5 && mouseY <= y - 5){
+  if (mouseX <= x + 20 && mouseX >= x-20 && mouseY <= y+20 && mouseY <= y-20){
     isPressed += 1;
     x = Math.random() * max;
     y = Math.random() * max;
