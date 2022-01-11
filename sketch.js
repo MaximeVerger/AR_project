@@ -7,13 +7,11 @@ let x = 0;
 let y = 0;
 let value = 150;
 
-function preload() {
-  soundFormats('mp3');
-  mySound = loadSound('BLOOP');
-}
 
 function setup() {
   createARCanvas();
+  soundFormats('mp3');
+  mySound = loadSound('BLOOP');
 }
 
 function draw() {
