@@ -9,7 +9,7 @@ value = 150
 function draw() {
   rot += rotSpeed;
   // rotateY(rot);
-  fill(value);
+  fill(100, 100, 240);
 
   box(5);
 
@@ -47,10 +47,5 @@ function draw() {
 }
 
 function touchStarted(){
-  if (value === 150){
-    value = 255
-  } 
-  else {
-    value = 150
-  }
+  remove();
 }
