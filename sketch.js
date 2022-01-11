@@ -5,11 +5,6 @@ function setup() {
 }
 
 let mySound;
-function preload() {
-  soundFormats('mp3');
-  mySound = loadSound('BLOOP');
-}
-
 let rot = 0;
 let rotSpeed = 0.1;
 let isPressed = 0;
