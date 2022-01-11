@@ -5,6 +5,7 @@ html, body {
 }
 h1{
   font-family: fantasy;
+  font-size: xx-large;
   text-align: center;
 }
 canvas {
