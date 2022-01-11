@@ -12,7 +12,9 @@ function setup() {
   let canvas = createARCanvas();
 }
 
-function draw() {  
+function draw() {
+  rot += rotSpeed;
+  
   if (isPressed%2 == 0) {
     translate(x, y, 0);
     fill(240, 100, 100);
@@ -26,10 +28,8 @@ function draw() {
     mySound.play();
   }
 }
-function touchsound(){
-  mySound.play();
-}
-function touchPressed(){
+
+function touchStarted(){
   isPressed += 1;
   x = Math.random() * max;
   y = Math.random() * max;
