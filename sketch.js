@@ -24,7 +24,7 @@ function draw() {
   fill(100, 100, 240);
   box(5);
 
-  translate(0, -10, 0);
+  translate(0, -5, 0);
   fill(100, 100, 240);
   box(5);
 }
