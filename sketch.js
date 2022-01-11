@@ -7,6 +7,12 @@ let x = 0;
 let y = 0;
 let value = 150;
 
+
+function preload() {
+  // preload() runs once
+  console.log("preload");
+}
+
 function setup() {
   let canvas = createARCanvas();
   preload();
@@ -33,9 +39,4 @@ function touchStarted(){
   isPressed += 1;
   x = Math.random() * max;
   y = Math.random() * max;
-}
-
-function preload() {
-  // preload() runs once
-  console.log("preload");
 }
