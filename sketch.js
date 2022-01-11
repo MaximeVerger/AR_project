@@ -50,5 +50,5 @@ function draw() {
 
 function touchStarted(){
   location = (0, -5, -5);
-  redraw();
+  // redraw();
 }
