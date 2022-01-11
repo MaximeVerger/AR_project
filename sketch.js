@@ -47,5 +47,7 @@ function draw() {
 }
 
 function touchStarted(){
-  background(0);
+  translate(0, -5, 0);
+  fill(240, 100, 100);
+  box(5);
 }
