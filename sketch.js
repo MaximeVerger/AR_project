@@ -47,5 +47,5 @@ function draw() {
 }
 
 function touchStarted(){
-  value = 155
+  clear();
 }
