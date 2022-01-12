@@ -78,8 +78,8 @@ const injectCSS = (cssText)=> {
   const style = document.createElement('style');
   style.innerHTML = cssText;
 
-  let head = document.getElementsByTagName('head')[0];
-  head.insertBefore(style, head.firstChild);
+  let head = document.getElementsByTagName('body')[0];
+  head.insertBefore(style, head.lastChild);
 };
 
 /**
