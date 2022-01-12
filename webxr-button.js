@@ -78,8 +78,8 @@ const injectCSS = (cssText)=> {
   const style = document.createElement('style');
   style.innerHTML = cssText;
 
-  let head = document.getElementsByTagName('body')[0];
-  head.insertBefore(style, head.lastChild);
+  let head = document.getElementsByTagName('head')[0];
+  head.insertBefore(style, head.firstChild);
 };
 
 /**
@@ -100,20 +100,20 @@ const createDefaultView = (options)=> {
 
   const el = document.createElement('div');
   el.innerHTML = generateInnerHTML(options.cssprefix, fontSize);
-  return el.lastChild;
+  return el.firstChild;
 };
 
 
 const createXRIcon = (cssPrefix, height)=>{
   const el = document.createElement('div');
   el.innerHTML = generateXRIconString(cssPrefix, height);
-  return el.lastChild;
+  return el.firstChild;
 };
 
 const createNoXRIcon = (cssPrefix, height)=>{
   const el = document.createElement('div');
   el.innerHTML = generateNoXRIconString(cssPrefix, height);
-  return el.lastChild;
+  return el.firstChild;
 };
 
 const generateXRIconString = (cssPrefix, height)=> {
