@@ -8,8 +8,9 @@ h1{
   font-size: 64px;
   text-align: center;
 }
-canvas {
-  display: block;
+h2 {
+  font-weight: bold;
+  text-align: center;
 }
 button {
   background-color: #A68DAD;
@@ -18,6 +19,6 @@ p, h2 {
   font-family: cursive;
   font-size: 50px;
 }
-h2 {
-  font-weight: bold;
+canvas {
+  display: block;
 }
