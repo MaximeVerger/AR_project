@@ -100,20 +100,20 @@ const createDefaultView = (options)=> {
 
   const el = document.createElement('div');
   el.innerHTML = generateInnerHTML(options.cssprefix, fontSize);
-  return el.firstChild;
+  return el.lastChild;
 };
 
 
 const createXRIcon = (cssPrefix, height)=>{
   const el = document.createElement('div');
   el.innerHTML = generateXRIconString(cssPrefix, height);
-  return el.firstChild;
+  return el.lastChild;
 };
 
 const createNoXRIcon = (cssPrefix, height)=>{
   const el = document.createElement('div');
   el.innerHTML = generateNoXRIconString(cssPrefix, height);
-  return el.firstChild;
+  return el.lastChild;
 };
 
 const generateXRIconString = (cssPrefix, height)=> {
