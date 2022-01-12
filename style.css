@@ -3,6 +3,9 @@ html, body {
   padding: 0;
   background-color: #C7B198;
 }
+.webvr-ui-button {
+  display: block;
+}
 h1{
   font-family: fantasy;
   font-size: 64px;
